@@ -35,9 +35,9 @@ export class LoginUser implements LoginUserUseCase {
         if(!token) throw CustomError.internalServer('Error creating token');
 
         return {
-            token: token as string,
+            token: token,
             user: {
-                id: user.id.toString(),
+                id: user.id,
                 name: user.name,
                 email: user.email,
             }

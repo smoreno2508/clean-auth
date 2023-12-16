@@ -36,7 +36,7 @@ export class RegisterUser implements RegisterUserUseCase {
 
         return {
             user: {
-                id: user.id.toString(),
+                id: user.id,
                 name: user.name,
                 email: user.email,
             }
